@@ -1,0 +1,14 @@
+{
+  "scaffold": {
+    "type": "react-native",
+    "version": "2.4.0",
+    "cookiecutter_context": {
+      "project_name": "Tst proxy connector",
+      "project_slug": "tst_proxy_connector_17",
+      "project_dash_slug": "tst-proxy-connector-17",
+      "project_description": "This react_native application was built with Crowdbotics www.crowdbotics.com",
+      "owner_email": "sp.gharti@gmail.com",
+      "ssh_key_fingerprint": "SHA256:cDvlsWIUsUNYK95mQ9V7Il/CYNrYamo490t9QwYcaWY"
+    }
+  }
+}
