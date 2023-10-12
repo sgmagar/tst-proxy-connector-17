@@ -79,4 +79,18 @@ class NewConnector3ViewSet(BaseConnectorViewSet):
         payload = request.data
         data = self._api_call("/dsdssdasssd", request_type="get", payload=payload, params=params)
         return Response(data)
+
+class NewConnector4ViewSet(BaseConnectorViewSet):
+    SECRET = settings.NEW_CONNECTOR4_SECRET
+    QUERY_NAME = "private_key"
+    BASE_URL = "https://sdds.sdds/sddsdlf/"
+    AUTH_TYPE = "apiKey"
+    IDENTIFIER = "NEW_CONNECTOR4"
+    
+    @action(detail=False, methods=["get"], url_path="ddsdsd")
+    def ddsdsd(self, request, *args, **kwargs):
+        params = request.query_params
+        payload = request.data
+        data = self._api_call("/ddsdsd", request_type="get", payload=payload, params=params)
+        return Response(data)
  
