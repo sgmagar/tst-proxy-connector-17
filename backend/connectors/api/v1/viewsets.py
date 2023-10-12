@@ -47,7 +47,9 @@ class BaseConnectorViewSet(viewsets.GenericViewSet):
             return {}
 
 class NewConnector2ViewSet(BaseConnectorViewSet):
-    BASE_URL = "https://dsd.sdds/dsddklllggssdffkk/"
+    PASSWORD = settings.NEW_CONNECTOR2_PASSWORD
+    USERNAME = settings.NEW_CONNECTOR2_USERNAME
+    BASE_URL = "https://dsd.sdds/dsddklllggssdffklllk/"
     AUTH_TYPE = "basic"
     IDENTIFIER = "NEW_CONNECTOR2"
     
