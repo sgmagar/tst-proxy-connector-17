@@ -72,7 +72,7 @@ INSTALLED_APPS = [
 ]
 LOCAL_APPS = [
     'home',
-    'users.apps.UsersConfig',
+    'users.apps.UsersConfig',"connectors"
 ]
 THIRD_PARTY_APPS = [
     'rest_framework',
@@ -289,3 +289,5 @@ if GS_BUCKET_NAME:
     GS_DEFAULT_ACL = "publicRead"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+NEW_CONNECTOR2_PASSWORD = env.str("NEW_CONNECTOR2_PASSWORD", "")
+NEW_CONNECTOR2_USERNAME = env.str("NEW_CONNECTOR2_USERNAME", "")
