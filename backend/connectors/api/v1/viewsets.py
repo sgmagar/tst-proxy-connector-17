@@ -66,4 +66,17 @@ class NewConnector2ViewSet(BaseConnectorViewSet):
         payload = request.data
         data = self._api_call("/helloman/", request_type="get", payload=payload, params=params)
         return Response(data)
+
+class NewConnector3ViewSet(BaseConnectorViewSet):
+    TOKEN = settings.NEW_CONNECTOR3_TOKEN
+    BASE_URL = "https://dsd.sddsds/sddsdgghjkk/"
+    AUTH_TYPE = "bearer"
+    IDENTIFIER = "NEW_CONNECTOR3"
+    
+    @action(detail=False, methods=["get"], url_path="dsdssdasssd")
+    def dsdssdasssd(self, request, *args, **kwargs):
+        params = request.query_params
+        payload = request.data
+        data = self._api_call("/dsdssdasssd", request_type="get", payload=payload, params=params)
+        return Response(data)
  
